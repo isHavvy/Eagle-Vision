@@ -1,0 +1,15 @@
+[package]
+name = "eagle_vision"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+# default = ["vm-trace"]
+
+vm-trace = []
+
+[dependencies]
+bevy = { version = "0.20", default-features = false, features = [ "debug", "bevy_log" ] }
+smallvec = { version = "1.16.4", features = [] }
+eagle_squak = { path = "../eagle_squak", features = [ "bevy" ] }

@@ -1,0 +1,12 @@
+[package]
+name = "eagle_squak"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy_ecs = { version = "0.20", default-features = false, optional = true }
+smallvec = { version = "1.16.4", features = [] }
+
+[features]
+default = []
+bevy = ["dep:bevy_ecs"]
