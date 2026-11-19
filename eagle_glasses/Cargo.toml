@@ -1,0 +1,10 @@
+[package]
+name = "eagle_glasses"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.20.0", default-features = false, features = ["ui", "bevy_feathers"] }
+eagle_vision = { path = "../eagle_vision" }
+eagle_squak = { path = "../eagle_squak" }
+bevy_form = { path = "../../bevy_form_helpers" }
